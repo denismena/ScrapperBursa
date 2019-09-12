@@ -52,9 +52,14 @@ namespace ScrapperBursa
 
         private void button2_Click(object sender, EventArgs e)
         {
-            for (int i = 100; i <= 376; i++)
+            for (int i = 41; i <= 92; i++)
             {
-                webBrowser1.Navigate("https://www.bursatransport.com/memberlist?doSearch=1&privateexchange_id=&MemberSearch2%5Btext%5D=&MemberSearch2%5Bdescription%5D=&MemberSearch2%5Bactivity%5D=Caraus&MemberSearch2%5BactiveTransportLicence%5D=0&MemberSearch2%5BactiveForwardingLicence%5D=0&MemberSearch2%5BactiveCompanies%5D=0&source_id_txt=&searchType=1&yt0=&range=0&page=" + i.ToString());
+                // doar tipuri. cate 2 fisiere pt fiecare tip
+                //clienti transport
+                //https://www.bursatransport.com/memberlist?doSearch=1&privateexchange_id=&MemberSearch2[text]=&MemberSearch2[description]=&MemberSearch2[activity]=Client+transport&MemberSearch2[activeTransportLicence]=0&MemberSearch2[activeForwardingLicence]=0&MemberSearch2[activeCompanies]=0&source_id_txt=&searchType=1&yt0=&range=0&page=
+                //carausi
+                //https://www.bursatransport.com/memberlist?doSearch=1&privateexchange_id=&MemberSearch2%5Btext%5D=&MemberSearch2%5Bdescription%5D=&MemberSearch2%5Bactivity%5D=Caraus&MemberSearch2%5BactiveTransportLicence%5D=0&MemberSearch2%5BactiveForwardingLicence%5D=0&MemberSearch2%5BactiveCompanies%5D=0&source_id_txt=&searchType=1&yt0=&range=0&page=
+                webBrowser1.Navigate("https://www.bursatransport.com/memberlist?doSearch=1&privateexchange_id=&MemberSearch2[text]=&MemberSearch2[description]=&MemberSearch2[activity]=Client+transport&MemberSearch2[activeTransportLicence]=0&MemberSearch2[activeForwardingLicence]=0&MemberSearch2[activeCompanies]=0&source_id_txt=&searchType=1&yt0=&range=0&page=" + i.ToString());
                 webBrowser1.ScriptErrorsSuppressed = true;
                 while (webBrowser1.ReadyState != WebBrowserReadyState.Complete)
                 {
