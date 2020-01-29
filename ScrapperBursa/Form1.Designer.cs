@@ -40,7 +40,7 @@
             this.webBrowser1.Location = new System.Drawing.Point(0, 0);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(1078, 312);
+            this.webBrowser1.Size = new System.Drawing.Size(1078, 653);
             this.webBrowser1.TabIndex = 0;
             // 
             // button1
@@ -61,15 +61,15 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);           
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // webBrowser2
             // 
             this.webBrowser2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.webBrowser2.Location = new System.Drawing.Point(0, 312);
+            this.webBrowser2.Location = new System.Drawing.Point(0, 653);
             this.webBrowser2.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser2.Name = "webBrowser2";
-            this.webBrowser2.Size = new System.Drawing.Size(1078, 391);
+            this.webBrowser2.Size = new System.Drawing.Size(1078, 78);
             this.webBrowser2.TabIndex = 4;
             // 
             // Form1
